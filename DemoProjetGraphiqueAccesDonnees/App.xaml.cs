@@ -28,6 +28,7 @@ namespace DemoProjetGraphiqueAccesDonnees
 
             _connexion = new SqlConnection(configuration.GetConnectionString("tsql2012"));
 
+            //https://docs.microsoft.com/en-us/dotnet/api/system.appdomain.unhandledexception?view=netcore-3.1
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
 
             Current.MainWindow = new MainWindow(new EmployeDao(_connexion),

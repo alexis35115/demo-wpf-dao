@@ -9,7 +9,7 @@
     <Grid Margin="0,0,0,0">
 
         <DataGrid x:Name="DgEmployes" Margin="10,68,19,255" SelectionMode="Single" SelectionChanged="Dg_employes_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False"/>
-        <Button x:Name="btn_charger_employes" Content="Afficher les employés" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="BtnChargerEmployes" Content="Afficher les employés" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Click="BtnChargerEmployes_Click" Grid.ColumnSpan="2" Grid.Column="1"/>
         <DataGrid x:Name="DgCommandes" Margin="10,265,0,58" HorizontalAlignment="Left" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" Width="1379"/>
         <Button x:Name="BtnSupprimerCommandeSelectionnee" Content="Supprimer la commande selectionnée" HorizontalAlignment="Left" Margin="890,240,0,0" VerticalAlignment="Top" Width="220" Click="BtnSupprimerCommandeSelectionnee_Click"/>
         <Button x:Name="BtnSupprimerToutesCommandes" Content="Supprimer toutes les commandes de l'employé" HorizontalAlignment="Left" Margin="1120,241,0,0" VerticalAlignment="Top" Width="268" Click="BtnSupprimerToutesCommandes_Click"/>

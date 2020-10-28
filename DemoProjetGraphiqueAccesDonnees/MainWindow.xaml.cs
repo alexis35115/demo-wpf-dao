@@ -6,9 +6,6 @@ using System.Windows;
 
 namespace DemoProjetGraphiqueAccesDonnees
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private const string MessageNombreEmployes = "Nombre d'employé(s) : {0}";
@@ -23,7 +20,7 @@ namespace DemoProjetGraphiqueAccesDonnees
             IDetailCommandeDao detailCommandeDao)
         {
 
-            // Laisser cette méthode en premier
+            // Laisser cette méthode en premier!
             InitializeComponent();
 
             _employeDao = employeDao;
@@ -31,9 +28,8 @@ namespace DemoProjetGraphiqueAccesDonnees
             _detailCommandeDao = detailCommandeDao;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnChargerEmployes_Click(object sender, RoutedEventArgs e)
         {
-            //Charger les données
             var employes = _employeDao.ObtenirEmployes();
 
             DgEmployes.ItemsSource = employes;
