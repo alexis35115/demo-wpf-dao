@@ -1,0 +1,19 @@
+﻿<Window x:Class="DemoProjetGraphiqueAccesDonnees.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoProjetGraphiqueAccesDonnees"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="506" Width="1421">
+    <Grid Margin="0,0,0,0">
+
+        <DataGrid x:Name="DgEmployes" Margin="10,68,19,255" SelectionMode="Single" SelectionChanged="Dg_employes_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False"/>
+        <Button x:Name="btn_charger_employes" Content="Afficher les employés" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <DataGrid x:Name="DgCommandes" Margin="10,265,0,58" HorizontalAlignment="Left" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" Width="1379"/>
+        <Button x:Name="BtnSupprimerCommandeSelectionnee" Content="Supprimer la commande selectionnée" HorizontalAlignment="Left" Margin="890,240,0,0" VerticalAlignment="Top" Width="220" Click="BtnSupprimerCommandeSelectionnee_Click"/>
+        <Button x:Name="BtnSupprimerToutesCommandes" Content="Supprimer toutes les commandes de l'employé" HorizontalAlignment="Left" Margin="1120,241,0,0" VerticalAlignment="Top" Width="268" Click="BtnSupprimerToutesCommandes_Click"/>
+        <Label x:Name="LblNombreEmployes" Content="" HorizontalAlignment="Left" Margin="133,43,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNombresCommandes" Content="" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="385"/>
+    </Grid>
+</Window>
